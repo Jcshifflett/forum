@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Music Survey Form</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <h1>Welcome To The Music Survey Form</h1>
+  <p>
+    In this survey, we would like to know the types of music you listen to, how often you listen, your favorite genres, the times you usually listen, and anything else you’d like to share about your musical experience!
+  </p>
+
+  <div class="questions">
+    <h3>PLEASE ANSWER THE FOLLOWING</h3>
+
+    <fieldset>
+
+      <label for="first-name">Enter Your First Name</label>
+      <input type="text" id="first-name" name="first-name" required />
+
+      <label for="last-name">Enter Your Last Name</label>
+      <input type="text" id="last-name" name="last-name" required />
+
+      <label for="email">Enter Your Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="age">Enter Your Age</label>
+      <input type="number" id="age" name="age" min="18" max="99" required />
+
+      <label for="genre-dropdown">Which Genre Best Describes You?</label>
+      <select id="genre-dropdown" name="genre">
+        <option value="">Select One</option>
+        <option value="jazz">Jazz</option>
+        <option value="rock">Rock</option>
+        <option value="edm">EDM</option>
+        <option value="metal">Metal</option>
+        <option value="country">Country</option>
+        <option value="rap">Rap</option>
+      </select>
+
+      <!-- Radio buttons -->
+      <label>How often would you say you listen to music?</label>
+
+      <label for="daily">
+        <input type="radio" id="daily" name="listening-frequency" value="daily" />
+        Daily
+      </label><br>
+
+      <label for="weekly">
+        <input type="radio" id="weekly" name="listening-frequency" value="weekly" />
+        Weekly
+      </label><br>
+
+      <label for="rarely">
+        <input type="radio" id="rarely" name="listening-frequency" value="rarely" />
+        Rarely
+      </label>
+
+      <label for="band-dropdown">Which Of These Bands Is Your Favorite?</label>
+      <select id="band-dropdown" name="favorite-band">
+        <option value="">Select One</option>
+        <option value="beatles">The Beatles</option>
+        <option value="eminem">Eminem</option>
+        <option value="mcr">My Chemical Romance</option>
+        <option value="sabbath">Black Sabbath</option>
+        <option value="sublime">Sublime</option>
+        <option value="yyt">Ying Yang Twins</option>
+      </select>
+
+      <label>What Do You Look For In Music</label>
+
+      <label>
+        <input type="checkbox" name="music-preference" value="melody" />
+        Melody
+      </label>
+
+      <label>
+        <input type="checkbox" name="music-preference" value="vibe" />
+        Vibe
+      </label>
+
+      <label>
+        <input type="checkbox" name="music-preference" value="harmony" />
+        Harmony
+      </label>
+
+      <label>
+        <input type="checkbox" name="music-preference" value="guitar" />
+        Guitar
+      </label>
+
+      <label>
+        <input type="checkbox" name="music-preference" value="singer" />
+        Singer
+      </label>
+
+      <label for="instruments">Do you have any musical background</label>
+      <textarea id="instruments" name="instruments" placeholder="Yeah! I play the guitar....." rows="8" cols="50"></textarea>
+
+      <input type="submit" value="submit" />
+
+    </fieldset>
+  </div>
+</body>
+</html>
